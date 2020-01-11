@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="lib.listeners.TestngListener"></listener>
+	</listeners>
+	<parameter name="URL" value="http://13.232.48.225/opentaps"></parameter>
+	<parameter name="userName" value="DemoCSR"></parameter>
+	<parameter name="password" value="crmsfa"></parameter>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="leaf.contacts.CreateContact" />
+			<!-- <class name="leaf.contacts.EditContact"></class> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+
+
+
+
